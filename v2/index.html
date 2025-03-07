@@ -8,7 +8,8 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
         .my-hero-bg {
-            background-image: url('images/hero-bg.png');
+            /* background-image: url('images/hero-bg.png'); */
+            background: linear-gradient(112.84deg, #46BAEB 0.33%, #AF2CFF 38.23%, #F790AF 65.22%, #C1ABFF 100%);
             background-size: cover;
             min-height: 100vh;
         }
@@ -17,23 +18,23 @@
             max-width: 210px;
             height: auto;
         }
-
-        .text-gradient {
-            background: linear-gradient(to right, #3b82f6, #9333ea, #ec4899);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
     </style>
 </head>
 
 <body>
+
     <!-- Navigation -->
     <div class="my-hero-bg" id="home">
-        <header class="text-gray-600 body-font">
+        <header class="text-white body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <i class="fa-solid fa-phone-volume fa-2x text-gradient"></i>
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+                    <!-- <i class="fa-solid fa-crown fa-2x" style="color: #2b7fff;"></i> -->
+                    <i class="fa-solid fa-phone-volume fa-2x" style="color: #fff;"></i>
                     <span class="ml-3 text-xl">Ezy Interviews</span>
                 </a>
                 <!-- <a class="navbar-brand" href="#">
@@ -48,8 +49,9 @@
                         </span></a>
                     <a class="mr-5 hover:text-gray-900" href="#blogs">Blogs</a>
                 </nav>
+            
                 <button
-                    class="inline-flex items-center text-blue-500 font-bold  border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact
+                    class="inline-flex items-center text-light font-bold  border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-base mt-4 md:mt-0">Contact
                     Us
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                         stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -60,30 +62,35 @@
         </header>
 
         <!-- Hero -->
-        <section class="text-gray-600 body-font">
+        <section class="text-white body-font">
             <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
-                <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
-                    src="images/hero.jpg">
+               
                 <div class="text-center lg:w-2/3 w-full">
-                    <h1 class="title-font sm:text-7xl text-6xl mb-4 font-medium text-gray-900">Prepare Smarter.</h1>
-                    <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-900">Ace your next job
+                    <div class="flex justify-center">
+                        <button class="bg-opacity-25 bg-black text-white px-6 py-2 rounded">
+                            This is a pill-shaped div
+                        </button>
+                    </div>
+                    
+                    <h1 class="title-font sm:text-8xl text-7xl mb-8 font-medium text-white">Prepare Smarter.</h1>
+                    <h1 class="title-font sm:text-3xl text-2xl mb-8 font-medium text-light">Ace your next job
                         interview with <span>Ezy Interviews</span></h1>
                     <p class="mb-8 leading-relaxed">Mock Interviews for Fresh Graduates, Junior, and Senior
                         Developers. Prepare for technical Interviews with real-world mock
                         sessions led by industry experts. Gain confidence, improve skills,
                         and land your dream job.</p>
                     <div class="flex justify-center">
-
-                        <button
-                            class="ml-4 inline-flex text-white bg-gradient-to-tr from-[#2b7fff] to-[#ec4899] border-0 py-2 px-6 focus:outline-none rounded text-lg">Start
-                            your free trial</button>
+                       
+                        <button class="bg-black text-white px-6 py-2 rounded flex items-center space-x-2">
+                            <span>Start your free trial</span>
+                            <i class="fas fa-circle-arrow-right"></i>
+                          </button>
+                          
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
-
     <!-- Benefits -->
 
     <section class="text-gray-600 body-font" id="features">
@@ -91,8 +98,7 @@
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Why attend a mock interview
                 </h1>
-                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">"The greatest ability is
-                    not talent, it's the ability to identify and improve weaknesses." – Unknown</p>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">"The greatest ability is not talent, it's the ability to identify and improve weaknesses." – Unknown</p>
                 <div class="flex mt-6 justify-center">
                     <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
                 </div>
@@ -100,7 +106,7 @@
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class="w-20 h-20 inline-flex items-center justify-center rounded-full text-white bg-gradient-to-r from-[#FC466B] to-[#3F5EFB] mb-5 flex-shrink-0">
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
@@ -108,17 +114,22 @@
                     </div>
                     <div class="flex-grow">
                         <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Boost Confidence</h2>
-                        <p class="leading-relaxed text-base">Mock interviews help candidates reduce anxiety by
-                            simulating
+                        <p class="leading-relaxed text-base">Mock interviews help candidates reduce anxiety by simulating
                             real job interviews. Practicing under realistic conditions
                             improves response time, clarity, and problem-solving skills,
                             making them more confident and prepared for actual interviews.
                         </p>
+                        <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class="w-20 h-20 inline-flex items-center justify-center rounded-full text-white bg-gradient-to-t from-[#FC466B] to-[#3F5EFB] mb-5 flex-shrink-0">
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                             <circle cx="6" cy="6" r="3"></circle>
@@ -133,11 +144,17 @@
                             recognize areas needing improvement, refine their approach, and
                             enhance their ability to answer complex questions effectively.
                         </p>
+                        <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                     <div
-                        class="w-20 h-20 inline-flex items-center justify-center rounded-full text-white bg-gradient-to-l from-[#FC466B] to-[#3F5EFB] mb-5 flex-shrink-0">
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
@@ -152,16 +169,28 @@
                             questions, and employer priorities, ensuring they stay
                             competitive in the job market.
                         </p>
+                        <a class="mt-3 text-blue-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
+            <button
+                class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
         </div>
     </section>
 
 
+
+
+
+
     <!-- Services -->
-    <section class="text-gray-600 bg-blue-50 body-font">
-        <div class="container px-5 py-20 mx-auto">
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Tailored Services for
                     different skill levels</h1>
@@ -174,8 +203,7 @@
                 <div class="p-4 lg:w-1/3">
                     <div
                         class="h-full bg-green-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Fresh Graduates
-                        </h2>
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Fresh Graduates</h2>
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">The Seekers</h1>
                         <p class="leading-relaxed mb-3">Designed for recent graduates, these interviews help build
                             confidence, improve problem-solving skills, and understand
@@ -213,8 +241,7 @@
                 <div class="p-4 lg:w-1/3">
                     <div
                         class="h-full bg-yellow-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Junior Developers
-                        </h2>
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Junior Developers</h2>
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">The Pathfinders</h1>
                         <p class="leading-relaxed mb-3">Ideal for candidates with some experience, these sessions
                             focus on technical assessments, system design, and behavioral
@@ -252,8 +279,7 @@
                 <div class="p-4 lg:w-1/3">
                     <div
                         class="h-full bg-pink-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Senior Developers
-                        </h2>
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Senior Developers</h2>
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">The Alchemists</h1>
                         <p class="leading-relaxed mb-3">Tailored for experienced professionals, these interviews cover
                             complex system design, leadership skills, and advanced coding
@@ -294,142 +320,111 @@
 
     <!-- Features -->
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-20 mx-auto flex flex-wrap">
-            <div class="flex flex-col text-center w-full mb-10">
+    <section class="text-gray-600 bg-blue-50 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-col text-center w-full mb-20">
                 <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Product Highlights</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
                     asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them
                     man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
-                <div class="flex mt-6 justify-center">
-                    <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
-                </div>
             </div>
-
-            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div
-                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-                    1</div>
-                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div
-                        class="flex-shrink-0 w-24 h-24 text-white bg-gradient-to-tr from-[#FC466B] to-[#15DFF6] rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                            <rect x="2" y="4" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12" y2="20"></line>
-                            <line x1="8" y1="20" x2="16" y2="20"></line>
-                            <path d="M9 9l3-3 3 3"></path>
-                            <path d="M9 12l3 3 3-3"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Live Technical Assessments</h2>
-                        <p class="leading-relaxed">Candidates solve real-world coding problems and system design
-                            questions in a proctored environment. These assessments test
-                            algorithmic thinking, problem-solving skills, and technical
-                            proficiency, simulating actual job interviews.</p>
-                    </div>
-                </div>
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
-            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div
-                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-                    2</div>
-                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div
-                        class="flex-shrink-0 w-24 h-24 text-white bg-gradient-to-tl from-[#FC466B] to-[#15DFF6] rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="12" x2="12" y2="6"></line>
-                            <line x1="12" y1="12" x2="16" y2="12"></line>
-                        </svg>
-
-                    </div>
-                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Flexible Scheduling</h2>
-                        <p class="leading-relaxed">Book mock interviews at a time that suits your availability. Our
-                            platform offers on-demand sessions, allowing candidates to
-                            practice without disrupting their daily routines or work
-                            schedules.</p>
-                    </div>
-                </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Live Technical Assessments</h2>
+                <p class="leading-relaxed">Candidates solve real-world coding problems and system design
+                    questions in a proctored environment. These assessments test
+                    algorithmic thinking, problem-solving skills, and technical
+                    proficiency, simulating actual job interviews.</p>
+              </div>
             </div>
-            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div
-                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-                    3</div>
-                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div
-                        class="flex-shrink-0 w-24 h-24 text-white bg-gradient-to-br from-[#FC466B] to-[#15DFF6] rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                            <circle cx="12" cy="5" r="3"></circle>
-                            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Industry Specific Questions</h2>
-                        <p class="leading-relaxed">Interviews are customized to match industry expectations, covering
-                            domain-specific technical questions. Whether in software
-                            development, data science, or cybersecurity, candidates face
-                            relevant challenges to enhance their preparedness.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
-            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-                <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-                <div
-                    class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-                    4</div>
-                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                    <div
-                        class="flex-shrink-0 w-24 h-24 text-white bg-gradient-to-bl from-[#FC466B] to-[#15DFF6] rounded-full inline-flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Behavioral Interview Training</h2>
-                        <p class="leading-relaxed">Learn how to respond effectively to HR and behavioral questions.
-                            Candidates receive guidance on communication, leadership,
-                            teamwork, and problem-solving scenarios to improve confidence
-                            and clarity in interviews.</p>
-                    </div>
-                </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Flexible Scheduling</h2>
+                <p class="leading-relaxed">Book mock interviews at a time that suits your availability. Our
+                    platform offers on-demand sessions, allowing candidates to
+                    practice without disrupting their daily routines or work
+                    schedules.</p>
+              </div>
             </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Industry Specific Questions</h2>
+                <p class="leading-relaxed">Interviews are customized to match industry expectations, covering
+                    domain-specific technical questions. Whether in software
+                    development, data science, or cybersecurity, candidates face
+                    relevant challenges to enhance their preparedness.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Behavioral Interview Training</h2>
+                <p class="leading-relaxed">Learn how to respond effectively to HR and behavioral questions.
+                    Candidates receive guidance on communication, leadership,
+                    teamwork, and problem-solving scenarios to improve confidence
+                    and clarity in interviews.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!-- Why Us -->
-    <section class="text-gray-600 bg-blue-50 body-font">
-        <div class="container px-5 py-20 mx-auto">
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Why choose Ezy Interviews
-                </h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Why choose Ezy Interviews</h1>
                 <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon
                     brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
-                <div class="flex mt-6 justify-center">
-                    <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
-                </div>
             </div>
             <div class="flex flex-wrap -m-4">
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 bg-white rounded-lg">
+                    <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -438,8 +433,7 @@
                             </svg>
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Real Interview Experience</h2>
-                        <p class="leading-relaxed text-base">Ezy Interviews offers structured mock interviews that
-                            closely
+                        <p class="leading-relaxed text-base">Ezy Interviews offers structured mock interviews that closely
                             simulate real job assessments. Candidates face technical,
                             behavioral, and problem-solving challenges to experience
                             real-world interview scenarios and improve their performance
@@ -447,7 +441,7 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 bg-white rounded-lg">
+                    <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -458,15 +452,14 @@
                             </svg>
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Expert Led Sessions</h2>
-                        <p class="leading-relaxed text-base">Our mock interviews are conducted by experienced
-                            professionals
+                        <p class="leading-relaxed text-base">Our mock interviews are conducted by experienced professionals
                             from top tech companies. These experts provide industry-specific
                             insights, assess technical and communication skills, and guide
                             candidates on best practices for job interviews.</p>
                     </div>
                 </div>
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 bg-white rounded-lg">
+                    <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -484,7 +477,7 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 bg-white rounded-lg">
+                    <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -500,7 +493,7 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 md:w-1/2 p-4">
-                    <div class="border border-gray-200 p-6 bg-white rounded-lg">
+                    <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -509,14 +502,13 @@
                             </svg>
                         </div>
                         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Multi-Language Support</h2>
-                        <p class="leading-relaxed text-base">Our platform supports live coding in 30+ programming
-                            languages
+                        <p class="leading-relaxed text-base">Our platform supports live coding in 30+ programming languages
                             using a collaborative IDE and interactive whiteboard. This
                             ensures a hands-on coding experience, allowing candidates to
                             demonstrate their skills in their preferred language.</p>
                     </div>
                 </div>
-                <!-- <div class="xl:w-1/3 md:w-1/2 p-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
                     <div class="border border-gray-200 p-6 rounded-lg">
                         <div
                             class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
@@ -529,116 +521,94 @@
                         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway
                             tile poke farm.</p>
                     </div>
-                </div> -->
+                </div>
             </div>
+            <button
+                class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
         </div>
     </section>
 
     <!-- Courses -->
-    <section class="text-gray-600 body-font overflow-hidden" id="courses">
-        <div class="container px-5 py-20 mx-auto">
+    <section class="text-gray-600 bg-fuchsia-50 body-font overflow-hidden" id="courses">
+        <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Courses Offered</h1>
                 <div class="flex mt-6 justify-center">
                     <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
                 </div>
             </div>
-            <div class="flex flex-wrap -m-12">
-                <div class="p-12 md:w-1/2 flex flex-col items-start">
-                    <span
-                        class="inline-block py-1 px-2 rounded bg-red-50 text-red-500 text-xs font-medium tracking-widest">Full
-                        Stack</span>
-                    <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party normcore
-                        before they sold out, cornhole vape</h2>
-                    <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
-                        portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion
-                        axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably
-                        haven't heard of them hexagon kickstarter craft beer pork chic.</p>
-                    <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                        <a class="text-blue-500 inline-flex items-center">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-
-                    </div>
-
-                </div>
-                <div class="p-12 md:w-1/2 flex flex-col items-start">
-                    <span
-                        class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">Frontend</span>
-                    <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Pinterest DIY
-                        dreamcatcher gentrify single-origin coffee</h2>
-                    <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
-                        portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion
-                        axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.</p>
-                    <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                        <a class="text-blue-500 inline-flex items-center">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-
-                    </div>
-
-                </div>
+          <div class="flex flex-wrap -m-12">
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-red-50 text-red-500 text-xs font-medium tracking-widest">Full Stack</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party normcore before they sold out, cornhole vape</h2>
+              <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+              
             </div>
-            <div class="flex flex-wrap -m-12">
-                <div class="p-12 md:w-1/2 flex flex-col items-start">
-                    <span
-                        class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Backend</span>
-                    <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party normcore
-                        before they sold out, cornhole vape</h2>
-                    <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
-                        portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion
-                        axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably
-                        haven't heard of them hexagon kickstarter craft beer pork chic.</p>
-                    <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                        <a class="text-blue-500 inline-flex items-center">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-
-                    </div>
-
-                </div>
-                <div class="p-12 md:w-1/2 flex flex-col items-start">
-                    <span
-                        class="inline-block py-1 px-2 rounded bg-yellow-50 text-yellow-500 text-xs font-medium tracking-widest">Database</span>
-                    <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Pinterest DIY
-                        dreamcatcher gentrify single-origin coffee</h2>
-                    <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
-                        portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion
-                        axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.</p>
-                    <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                        <a class="text-blue-500 inline-flex items-center">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-
-                </div>
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">Frontend</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Pinterest DIY dreamcatcher gentrify single-origin coffee</h2>
+              <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+              
             </div>
+          </div>
+          <div class="flex flex-wrap -m-12">
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Backend</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Roof party normcore before they sold out, cornhole vape</h2>
+              <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably haven't heard of them hexagon kickstarter craft beer pork chic.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+              
+            </div>
+            <div class="p-12 md:w-1/2 flex flex-col items-start">
+              <span class="inline-block py-1 px-2 rounded bg-yellow-50 text-yellow-500 text-xs font-medium tracking-widest">Database</span>
+              <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Pinterest DIY dreamcatcher gentrify single-origin coffee</h2>
+              <p class="leading-relaxed mb-8">Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.</p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
 
     <!-- Workshops -->
-    <section class="text-gray-600 bg-blue-50 body-font">
-        <div class="container px-5 py-20 mx-auto">
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Upcoming Workshops / Webinars
-                </h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Upcoming Workshops / Webinars</h1>
                 <div class="flex mt-6 justify-center">
                     <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
                 </div>
@@ -711,11 +681,11 @@
         </div>
     </section>
 
-
+    
 
     <!-- Blogs -->
     <section class="text-gray-600 body-font" id="blogs">
-        <div class="container px-5 py-20 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Recent Articles</h1>
                 <div class="flex mt-6 justify-center">
@@ -842,11 +812,9 @@
     <section class="text-gray-600 bg-amber-100 body-font">
         <div class="container px-5 py-10 mx-auto">
             <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-                <h1 class="flex-grow sm:pr-16 text-3xl font-medium title-font text-gray-900">Empower your students:
-                    Request an Expert-Led Workshop Today!</h1>
+                <h1 class="flex-grow sm:pr-16 text-3xl font-medium title-font text-gray-900">Empower your students: Request an Expert-Led Workshop Today!</h1>
                 <button
-                    class="flex-shrink-0 text-white bg-gradient-to-tr from-[#2b7fff] to-[#cd88f0] border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0">Contact
-                    Us</button>
+                    class="flex-shrink-0 text-white bg-gradient-to-tr from-[#2b7fff] to-[#cd88f0] border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0">Contact Us</button>
             </div>
         </div>
     </section>
@@ -856,7 +824,7 @@
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                 <i class="fa-solid fa-phone-volume fa-2x" style="color: #2b7fff;"></i>
-                <span class="ml-3 text-xl">Ezy Interviews</span>
+                    <span class="ml-3 text-xl">Ezy Interviews</span>
             </a>
             <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
                 2025 EzyInterviews
