@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.my-hero-bg {
+    /* background-image: url('images/hero-bg.png'); */
+    background: linear-gradient(112.84deg, #46BAEB 0.33%, #AF2CFF 38.23%, #F790AF 65.22%, #C1ABFF 100%);
+}
+
+.my-logo {
+    max-width: 210px;
+    height: auto;
+}

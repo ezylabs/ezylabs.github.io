@@ -1,0 +1,25 @@
+{
+  "name": "ezylabs.github.io",
+  "version": "1.0.0",
+  "description": "EzyLabs Github Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezylabs/ezylabs.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezylabs/ezylabs.github.io/issues"
+  },
+  "homepage": "https://github.com/ezylabs/ezylabs.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.12",
+    "tailwindcss": "^4.0.12"
+  }
+}

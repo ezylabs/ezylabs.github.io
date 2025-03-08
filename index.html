@@ -1,317 +1,901 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
+<!doctype html>
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="keywords" content="Ready for Your Dream Job?">
-  <meta name="description" content="">
-  <title>EzyInterviews</title>
-  <link rel="stylesheet" href="nicepage.css" media="screen">
-  <link rel="stylesheet" href="index.css" media="screen">
-  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-  <script id="setmore_script" type="text/javascript" src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"></script>
-  
-  <link id="u-theme-google-font" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-  <link id="u-page-google-font" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-  <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "ezyinterviews",
-		"sameAs": []
-}</script>
-  <meta name="theme-color" content="#478ac9">
-  <meta property="og:title" content="Home">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" rel="stylesheet" />
+  <link href="./output.css" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DFTXEVZPW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5DFTXEVZPW');
+  </script>
 </head>
 
-<body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false"
-  class="u-body u-xl-mode" data-lang="en">
-  <header class="u-clearfix u-header u-header" id="sec-21ad">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-            href="#">
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xlink:href="#menu-hamburger"></use>
+<body>
+  <!-- Navigation -->
+  <div id="home" class="min-h-screen my-hero-bg">
+    <header class="text-white body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
+          <i class="fa-solid fa-meteor fa-2x" style="color: #fff"></i>
+          <span class="ml-3 text-xl">Ezy Interviews</span>
+        </a>
+        <!-- <a class="navbar-brand" href="#">
+                <img src="images/logo-blue.png" alt="logo" class="my-logo" />
+            </a> -->
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-gray-900" href="#why">Why</a>
+          <a class="mr-5 hover:text-gray-900" href="#features">Features</a>
+          <a class="mr-5 hover:text-gray-900" href="#courses">Courses
+            <span class="inline-block bg-green-600 text-white text-xs font-extralight rounded-full px-1">
+              New
+            </span></a>
+          <a class="mr-5 hover:text-gray-900" href="#workshops">Workshops</a>
+          <a class="mr-5 hover:text-gray-900" href="#blogs">Blogs</a>
+        </nav>
+
+        <a href="/contact.html"
+          class="inline-flex items-center text-light text-sm uppercase tracking-[1px] fw-200 space-x-2 border-0 py-2 px-3 focus:outline-none hover:outline rounded text-base mt-4 md:mt-0 bg-[rgba(255,255,255,0.2)]">
+          <span><i class="fa-solid fa-phone px-2" style="color: #fff"></i>Talk to us</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-white body-font">
+      <div class="container mx-auto flex px-5 items-center justify-center flex-col h-[calc(100vh-5rem)]">
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-8xl text-7xl mb-8 font-medium text-white">
+            Prepare Smarter.
+          </h1>
+          <h1 class="title-font sm:text-3xl text-2xl mb-8 font-medium text-light">
+            Ace your next job interview with <span>Ezy Interviews</span>
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Mock Interviews for Fresh Graduates, Junior, and Senior
+            Developers. Prepare for technical Interviews with real-world mock
+            sessions led by industry experts. Gain confidence, improve skills,
+            and land your dream job.
+          </p>
+          <div class="flex justify-center">
+            <a href="/register.html"
+              class="inline-flex text-white border-0 py-3 px-6 hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase bg-black">
+              <span>Book a free live class<i class="fas fa-circle-arrow-right px-2"></i></span>
+            </a>
+            <a href="/mock-interviews.html"
+              class="inline-flex text-black border-0 py-3 px-6 focus:outline-none hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase ml-4 bg-[rgba(255,255,255,0.3)]">
+              <span>Schedule a Mock Inteview<i class="fa fa-calendar-days px-2"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Benefits -->
+  <section class="text-gray-600 body-font" id="why">
+    <div class="container px-5 py-20 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 capitalize">
+          Why attend a mock interview
+        </h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+          "The greatest ability is not talent, it's the ability to identify
+          and improve weaknesses." – Unknown
+        </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
-              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-              </g>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 sm:text-2xl text-xl title-font font-medium mb-3">
+              Boost Confidence
+            </h2>
+            <p class="leading-relaxed text-base text-center">
+              Mock interviews help candidates reduce anxiety by simulating
+              real job interviews. Practicing under realistic conditions
+              improves response time, clarity, and problem-solving skills,
+              making them more confident and prepared for actual interviews.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
             </svg>
-          </a>
-        </div>
-        <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1">
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                style="padding: 10px 20px;">Home</a>
-            </li>
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                style="padding: 10px 20px;">Blog</a>
-            </li>
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                style="padding: 10px 20px;">Resources</a>
-            </li>
-          </ul>
-        </div>
-        <div class="u-custom-menu u-nav-container-collapse">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link">Home</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link">Blog</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link">Resources</a>
-                </li>
-              </ul>
-            </div>
           </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 sm:text-2xl text-xl title-font font-medium mb-3">
+              Identify Weaknesses
+            </h2>
+            <p class="leading-relaxed text-base text-center">
+              Candidates receive detailed feedback on their technical,
+              problem-solving, and communication skills. This helps them
+              recognize areas needing improvement, refine their approach, and
+              enhance their ability to answer complex questions effectively.
+            </p>
+          </div>
         </div>
-      </nav>
-      <img class="u-image u-image-contain u-image-default u-image-1" src="images/logo.png" alt="" data-image-width="288"
-        data-image-height="166">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div
+            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 sm:text-2xl text-xl title-font font-medium mb-3">
+              Stay Competitive
+            </h2>
+            <p class="leading-relaxed text-base text-center">
+              Mock interviews expose candidates to current hiring trends,
+              interview formats, and industry-specific expectations. They
+              learn about evolving technical assessments, behavioral
+              questions, and employer priorities, ensuring they stay
+              competitive in the job market.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <section class="u-clearfix u-white u-section-1" id="carousel_6cc3">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <div
-        class="custom-expanded data-layout-selected u-clearfix u-gutter-0 u-layout-spacing-all u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div
-              class="u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-layout-cell u-size-26-lg u-size-26-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1"
-              data-animation-name="flipIn" data-animation-duration="1500" data-animation-delay="500"
-              data-animation-direction="X">
-              <div class="u-container-layout u-container-layout-1">
-                <h1 class="u-align-left u-text u-text-1">Ready for Your Dream Job?</h1>
-                <p class="u-align-left u-text u-text-2">Whether you're a fresher or an experienced pro, we'll help you
-                  prepare for success in your next interview!</p>
-                <a href="https://booking.setmore.com/scheduleappointment/d7206a78-060c-4b07-b57f-4a62b260bdde"
-                  class="u-active-palette-2-base u-align-left u-black u-border-1 u-border-active-palette-2-base u-border-black u-border-hover-palette-2-base u-btn u-btn-round u-button-style u-hover-palette-2-base u-radius u-text-hover-white u-btn-1">Get
-                  Started for FREE </a>
-                <blockquote class="u-align-center u-border-none u-text u-text-palette-2-base u-text-3">Claim your free
-                  spot be​fore it's to​o late! </blockquote>
+  </section>
+
+  <!-- Services -->
+  <section class="text-gray-600 bg-blue-50 body-font" id="features">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 capitalize">
+          Tailored for different skill levels
+        </h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+          Our offerings cater to all skill levels, from beginners to experts. We provide resources and guidance tailored
+          to your needs.
+        </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/3">
+          <div
+            class="h-full bg-green-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              Fresh Graduates
+            </h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+              The Seekers
+            </h1>
+            <p class="leading-relaxed mb-3">
+              Designed for recent graduates, these interviews help build
+              confidence, improve problem-solving skills, and understand
+              real-world hiring expectations. Get hands-on coding practice,
+              behavioral questions training and expert feedback to boost your
+              job readiness.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div
+            class="h-full bg-yellow-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              Junior Developers
+            </h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+              The Pathfinders
+            </h1>
+            <p class="leading-relaxed mb-3">
+              Ideal for candidates with some experience, these sessions focus
+              on technical assessments, system design, and behavioral
+              questions. Improve coding efficiency, refine interview
+              techniques, and receive structured feedback to advance your
+              career in software development.
+            </p>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div
+            class="h-full bg-pink-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              Senior Developers
+            </h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+              The Alchemists
+            </h1>
+            <p class="leading-relaxed mb-3">
+              Tailored for experienced professionals, these interviews cover
+              complex system design, leadership skills, and advanced coding
+              challenges. Gain industry insights, master high-level
+              problem-solving, and enhance communication skills to secure
+              top-tier tech roles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
+          ROOF PARTY POLAROID
+        </h2>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          Our Product Highlights
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+          gentrify, subway tile poke farm-to-table. Franzen you probably
+          haven't heard of them man bun deep jianbing selfies heirloom prism
+          food truck ugh squid celiac humblebrag.
+        </p>
+      </div>
+      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          1
+        </div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              Live Technical Assessments
+            </h2>
+            <p class="leading-relaxed">
+              Candidates solve real-world coding problems and system design
+              questions in a proctored environment. These assessments test
+              algorithmic thinking, problem-solving skills, and technical
+              proficiency, simulating actual job interviews.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          2
+        </div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              Flexible Scheduling
+            </h2>
+            <p class="leading-relaxed">
+              Book mock interviews at a time that suits your availability. Our
+              platform offers on-demand sessions, allowing candidates to
+              practice without disrupting their daily routines or work
+              schedules.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          3
+        </div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <circle cx="12" cy="5" r="3"></circle>
+              <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              Industry Specific Questions
+            </h2>
+            <p class="leading-relaxed">
+              Interviews are customized to match industry expectations,
+              covering domain-specific technical questions. Whether in
+              software development, data science, or cybersecurity, candidates
+              face relevant challenges to enhance their preparedness.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+          4
+        </div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+              Behavioral Interview Training
+            </h2>
+            <p class="leading-relaxed">
+              Learn how to respond effectively to HR and behavioral questions.
+              Candidates receive guidance on communication, leadership,
+              teamwork, and problem-solving scenarios to improve confidence
+              and clarity in interviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="text-gray-600 bg-blue-50 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          Why choose Ezy Interviews
+        </h1>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+          gentrify, subway tile poke farm-to-table.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 bg-white rounded-lg">
+            <div class="w-15 h-15 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <i class="fa-solid fa-people-arrows fa-2x"></i>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+              Real Interview Experience
+            </h2>
+            <p class="leading-relaxed text-base">
+              Ezy Interviews offers structured mock interviews that closely
+              simulate real job assessments. Candidates face technical,
+              behavioral, and problem-solving challenges to experience
+              real-world interview scenarios and improve their performance
+              under pressure.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 bg-white rounded-lg">
+            <div class="w-15 h-15 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <i class="fa-solid fa-crown fa-2x"></i>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+              Expert Led Sessions
+            </h2>
+            <p class="leading-relaxed text-base">
+              Our mock interviews are conducted by experienced professionals
+              from top tech companies. These experts provide industry-specific
+              insights, assess technical and communication skills, and guide
+              candidates on best practices for job interviews.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 bg-white rounded-lg">
+            <div class="w-15 h-15 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <i class="fa-solid fa-comments fa-2x"></i>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+              Comprehensive Feedback
+            </h2>
+            <p class="leading-relaxed text-base">
+              After each session, candidates receive detailed feedback on
+              their strengths and areas for improvement. Performance reports
+              include technical accuracy, problem-solving skills,
+              communication clarity, and suggestions for better interview
+              responses.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 bg-white rounded-lg">
+            <div class="w-15 h-15 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <i class="fa-solid fa-scissors fa-2x"></i>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+              Tailored for All Levels
+            </h2>
+            <p class="leading-relaxed text-base">
+              Whether you're a fresher preparing for your first job or a
+              senior developer aiming for career advancement, we offer
+              interview plans designed to match your experience level and
+              industry requirements.
+            </p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 bg-white rounded-lg">
+            <div class="w-15 h-15 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <i class="fa-solid fa-laptop-code fa-2x"></i>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+              Multi-Language Support
+            </h2>
+            <p class="leading-relaxed text-base">
+              Our platform supports live coding in 30+ programming languages
+              using a collaborative IDE and interactive whiteboard. This
+              ensures a hands-on coding experience, allowing candidates to
+              demonstrate their skills in their preferred language.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="text-gray-600 body-font overflow-hidden" id="courses">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+          Courses Offered
+        </h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-12">
+        <div class="p-12 md:w-1/2 flex flex-col items-start">
+          <span class="inline-block py-1 px-2 rounded bg-red-50 text-red-500 text-xs font-medium tracking-widest">Full
+            Stack</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+            Full Stack Java Development
+          </h2>
+          <p class="leading-relaxed mb-8">
+            Dive into our Full Stack Java Development course designed for all skill levels. Whether you're a seasoned IT
+            professional looking to expand your skillset or a newcomer eager to explore the world of web development,
+            our comprehensive course is crafted to cater to all levels of expertise.
+          </p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+            <a class="text-blue-500 inline-flex items-center" href="/course-full-stack.html">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-12 md:w-1/2 flex flex-col items-start">
+          <span
+            class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest">Frontend</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+            Front End Web Development
+          </h2>
+          <p class="leading-relaxed mb-8">
+            Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
+            portland. VHS man braid palo santo hoodie brunch trust fund.
+            Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie
+            chambray 90's, slow-carb etsy tumeric.
+          </p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+            <a class="text-blue-500 inline-flex items-center" href="course-frontend.html">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-12">
+        <div class="p-12 md:w-1/2 flex flex-col items-start">
+          <span
+            class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">Backend</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+            Backend Java Development
+          </h2>
+          <p class="leading-relaxed mb-8">
+            Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
+            portland. VHS man braid palo santo hoodie brunch trust fund.
+            Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie
+            chambray 90's, slow-carb etsy tumeric. Cray pug you probably
+            haven't heard of them hexagon kickstarter craft beer pork chic.
+          </p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+            <a class="text-blue-500 inline-flex items-center" href="course-backend.html">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-12 md:w-1/2 flex flex-col items-start">
+          <span
+            class="inline-block py-1 px-2 rounded bg-yellow-50 text-yellow-500 text-xs font-medium tracking-widest">Database</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+            Database Essentials for any Developer
+          </h2>
+          <p class="leading-relaxed mb-8">
+            Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
+            portland. VHS man braid palo santo hoodie brunch trust fund.
+            Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie
+            chambray 90's, slow-carb etsy tumeric.
+          </p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+            <a class="text-blue-500 inline-flex items-center" href="/course-database.html">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshops -->
+  <section class="text-gray-600 bg-blue-50 body-font" id="workshops">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+          Upcoming Workshops / Webinars
+        </h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4 my-5">
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Dec</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">14</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1 uppercase">
+                Technology
+              </h2>
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">
+                Programming Language Workshop
+              </h1>
+              <p class="leading-relaxed mb-5">
+                Strengthen coding skills with structured sessions on writing
+                clean, efficient and error free code. These workshops help
+                developers improve logic, syntax, and technical problem
+                solving, ensuring they write optimized code for real-world
+                projects and technical interviews.
+              </p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
               </div>
             </div>
-            <div
-              class="u-container-style u-layout-cell u-size-34-lg u-size-34-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-2">
-              <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-2">
-                <div class="u-palette-2-base u-preserve-proportions u-shape u-shape-circle u-shape-1"
-                  data-animation-name="customAnimationIn" data-animation-duration="1200" data-animation-delay="500">
-                </div>
-                <img class="u-expanded-width u-image u-image-default u-image-1"
-                  src="images/portrait-delighted-hipster-male-student-7-min.png" alt="" data-image-width="1000"
-                  data-image-height="1132" data-animation-name="customAnimationIn" data-animation-duration="1500"
-                  data-animation-delay="0">
+          </div>
+        </div>
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Jan</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">11</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1 uppercase">
+                Behavioral
+              </h2>
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">
+                Interview Etiquette Workshops
+              </h1>
+              <p class="leading-relaxed mb-5">
+                Learn essential interview etiquette, including body
+                language, professional communication, and first impressions.
+                These sessions prepare students to present themselves
+                confidently, make a positive impact, and handle interviews
+                with professionalism.
+              </p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Feb</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">14</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1 uppercase">
+                Strategy
+              </h2>
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">
+                Interview Handling Workshops
+              </h1>
+              <p class="leading-relaxed mb-5">
+                Gain strategies to tackle interview questions effectively,
+                from technical assessments to behavioral rounds. Students
+                learn to structure responses, think critically under
+                pressure, and showcase problem-solving skills to impress
+                recruiters.
+              </p>
+              <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
+                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center justify-center items-start mx-auto">
+        <h1 class="flex-grow sm:pr-16 text-3xl font-medium title-font text-gray-900 capitalize text-center">
+          Empower your students: Request an Expert-Led Workshop Today!
+        </h1>
+        <a class="flex-shrink-0 text-white bg-gradient-to-tr from-[#2b7fff] to-[#cd88f0] border-0 py-2 px-8 rounded text-lg mt-10 sm:mt-0"
+          href="/workshops.html">
+          Contact Us
+        </a>
+      </div>
+
     </div>
   </section>
-  <section class="u-align-center u-clearfix u-container-align-center u-white u-section-2" id="carousel_0060">
-    <h2 class="u-subtitle u-text u-text-1">Trusted By Engineers</h2>
-    <div class="u-expanded-width u-layout-grid u-list u-list-1">
-      <div class="u-repeater u-repeater-1">
-        <div class="u-container-style u-list-item u-repeater-item u-white">
-          <div class="u-container-layout u-similar-container u-valign-middle-sm u-container-layout-1">
-            <h3 class="u-align-center u-text u-text-palette-2-base u-text-2" data-animation-name="counter"
-              data-animation-event="scroll" data-animation-duration="3000">90%</h3>
-            <h6 class="u-align-center u-text u-text-3">Success Rate of Candidates </h6>
-          </div>
-        </div>
-        <div class="u-container-style u-list-item u-repeater-item u-white">
-          <div class="u-container-layout u-similar-container u-valign-middle-sm u-container-layout-2">
-            <h3 class="u-align-center u-text u-text-palette-2-base u-text-4" data-animation-name="counter"
-              data-animation-event="scroll" data-animation-duration="3000">35+</h3>
-            <h6 class="u-align-center u-text u-text-5">&nbsp;Friend Referrals</h6>
-          </div>
-        </div>
-        <div class="u-container-style u-list-item u-repeater-item u-white">
-          <div class="u-container-layout u-similar-container u-valign-middle-sm u-container-layout-3">
-            <h3 class="u-align-center u-text u-text-palette-2-base u-text-6" data-animation-name="counter"
-              data-animation-event="scroll" data-animation-duration="3000">120+ </h3>
-            <h6 class="u-align-center u-text u-text-7">Mock Interviews Conducted </h6>
-          </div>
+
+
+  <!-- Blogs -->
+  <section class="text-gray-600 body-font" id="blogs">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+          Recent Articles
+        </h1>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="u-clearfix u-container-align-center u-white u-section-3" id="sec-d5e2">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div
-              class="u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1"
-              data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-              <div class="u-container-layout u-container-layout-1">
-                <h3 class="u-align-center u-text u-text-1">Easy way to crack interviews is <span
-                    class="u-text-palette-2-base">Practice</span>.&nbsp;Period.
-                </h3>
-                <p class="u-align-left u-custom-font u-heading-font u-text u-text-2">Ezy Interviews is a mentoring
-                  program &amp; professional community run by industry experts. ​Get expert guidance on coding,
-                  algorithms, systems design, behavioral questions, resume tips, mock interviews, offer negotiation, and
-                  more. Fast-track your career with proven strategies and insider tips.<br>
-                  <span style="font-weight: 700; font-style: italic;"></span>
-                </p>
-                <p class="u-align-center u-custom-font u-font-open-sans u-text u-text-3"> "No more guesswork -
-                  Accelerate your success today"<span style="font-weight: 700;"></span>
-                </p>
-                <a href="https://booking.setmore.com/scheduleappointment/d7206a78-060c-4b07-b57f-4a62b260bdde"
-                  class="u-active-none u-border-active-white u-border-hover-palette-2-base u-border-none u-border-palette-2-base u-btn u-button-style u-hover-white u-palette-2-base u-text-active-palette-2-base u-text-hover-palette-2-base u-text-white u-btn-1">Schedule
-                  Expert Mock Interview </a>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400"
+              alt="blog" />
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                CATEGORY
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                The Catalyzer
+              </h1>
+              <p class="leading-relaxed mb-3">
+                Photo booth fam kinfolk cold-pressed sriracha leggings
+                jianbing microdosing tousled waistcoat.
+              </p>
+              <div class="flex items-center flex-wrap">
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/blogs.html">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>6
+                </span>
               </div>
             </div>
-            <div
-              class="u-container-align-center u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1"
-              data-image-width="836" data-image-height="557" data-animation-name="customAnimationIn"
-              data-animation-duration="1000" data-animation-delay="0">
-              <div class="u-container-layout u-container-layout-2"></div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/821x501"
+              alt="blog" />
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                CATEGORY
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                The 400 Blows
+              </h1>
+              <p class="leading-relaxed mb-3">
+                Photo booth fam kinfolk cold-pressed sriracha leggings
+                jianbing microdosing tousled waistcoat.
+              </p>
+              <div class="flex items-center flex-wrap">
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/blogs.html">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>6
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="u-align-center u-clearfix u-container-align-center u-section-4" id="sec-7dbd">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-text u-text-default u-text-1">Testimonials</h2>
-      <div class="u-expanded-width u-list u-list-1">
-        <div class="u-repeater u-repeater-1">
-          <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-              <p class="u-align-center u-text u-text-2">"I just want to thank you for creating EzyInterviews that has
-                helped our students in preparing for interviews overcoming their anxiety"</p>
-              <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="256"
-                data-image-height="256"></div>
-              <h5 class="u-align-center u-text u-text-3">Prof. J Anbazhagan </h5>
-              <h6 class="u-align-center u-text u-text-4">HOD, Dept of Comp Science </h6>
-            </div>
-          </div>
-          <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-              <p class="u-align-center u-text u-text-5">"EzyInterviews is the missing puzzle in my interview
-                preparation. It gave me the comfort and confidence to treat my interviews like a fun, relaxing
-                conversations over shared interests, rather than the terrifying experience of answering questions"</p>
-              <div alt="" class="u-image u-image-circle u-image-2" src="" data-image-width="256"
-                data-image-height="256"></div>
-              <h5 class="u-align-center u-text u-text-6">Anonymous</h5>
-              <h6 class="u-align-center u-text u-text-7">SDE-II ​at Amazon</h6>
-            </div>
-          </div>
-          <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-              <p class="u-align-center u-text u-text-8">"Got 2 offers now and 2 more are in pipeline. The feedbacks from
-                the mock interviews has helped me understand my gaps. Thank you EzyInterview team"</p>
-              <div alt="" class="u-image u-image-circle u-image-3" src="" data-image-width="256"
-                data-image-height="256"></div>
-              <h5 class="u-align-center u-text u-text-9">Anonymous</h5>
-              <h6 class="u-align-center u-text u-text-10">Full Stack Developer</h6>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402"
+              alt="blog" />
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                CATEGORY
+              </h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                Shooting Stars
+              </h1>
+              <p class="leading-relaxed mb-3">
+                Photo booth fam kinfolk cold-pressed sriracha leggings
+                jianbing microdosing tousled waistcoat.
+              </p>
+              <div class="flex items-center flex-wrap">
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/blogs.html">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <span
+                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>1.2K
+                </span>
+                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>6
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="u-clearfix u-section-5" id="sec-a401">
-    <img class="u-expanded-width u-image u-image-1" src="images/seminar.png" data-image-width="652"
-      data-image-height="259">
-    <div
-      class="u-align-left u-container-align-center u-container-align-left u-container-style u-expanded-width u-group u-radius u-shape-round u-group-1"
-      data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500"
-      data-animation-direction="">
-      <div class="u-container-layout u-container-layout-1">
-        <h3 class="u-align-center u-text u-text-body-alt-color u-text-1">Empower your students: Request an Expert-Led
-          Workshop Today!</h3>
-        <a href="https://booking.setmore.com/scheduleappointment/d7206a78-060c-4b07-b57f-4a62b260bdde"
-          class="u-active-palette-2-base u-align-center u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-hover-palette-2-base u-palette-2-base u-radius u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-1">Contact
-          Us </a>
       </div>
     </div>
   </section>
 
 
 
-  <footer class="u-clearfix u-footer u-white" id="sec-d076">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
-        <a class="u-social-url" title="facebook" target="_blank" href="">
-          <span class="u-icon u-social-facebook u-social-icon u-icon-1">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xlink:href="#svg-f39d"></use>
-            </svg>
-            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f39d">
-              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
-              <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
-            </svg>
-          </span>
+  <!-- Footer -->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="/">
+        <i class="fa-solid fa-meteor fa-2x"></i>
+        <span class="ml-3 text-xl">Ezy Interviews</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        © 2025 EzyInterviews
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
         </a>
-        <a class="u-social-url" title="twitter" target="_blank" href="">
-          <span class="u-icon u-social-icon u-social-twitter u-icon-2">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xlink:href="#svg-7f99"></use>
-            </svg>
-            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-7f99">
-              <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
-              <path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
-      c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
-      c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
-      c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-      c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path>
-            </svg>
-          </span>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
         </a>
-        <a class="u-social-url" title="instagram" target="_blank" href="">
-          <span class="u-icon u-social-icon u-social-instagram u-icon-3">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xlink:href="#svg-22b9"></use>
-            </svg>
-            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-22b9">
-              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
-              <path fill="#FFFFFF"
-                d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path>
-              <path fill="#FFFFFF"
-                d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
-              <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
-            </svg>
-          </span>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
         </a>
-        <a class="u-social-url" title="linkedin" target="_blank" href="">
-          <span class="u-icon u-social-icon u-social-linkedin u-icon-4">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xlink:href="#svg-7f6c"></use>
-            </svg>
-            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-7f6c">
-              <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
-              <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
-      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
-      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path>
-            </svg>
-          </span>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
         </a>
-      </div>
+      </span>
     </div>
   </footer>
 </body>
