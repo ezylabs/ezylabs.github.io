@@ -6,6 +6,11 @@
 }
 
 .my-logo {
-    max-width: 210px;
-    height: auto;
+  max-height: 45px;
+  width: auto;
+}
+
+.my-logo-footer {
+  max-height: 35px;
+  width: auto;
 }
