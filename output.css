@@ -9,7 +9,6 @@
     --color-red-50: oklch(0.971 0.013 17.38);
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-yellow-50: oklch(0.987 0.026 102.212);
-    --color-yellow-300: oklch(0.905 0.182 98.111);
     --color-yellow-500: oklch(0.795 0.184 86.047);
     --color-green-50: oklch(0.982 0.018 155.826);
     --color-green-500: oklch(0.723 0.219 149.579);
@@ -229,6 +228,9 @@
   }
   .relative {
     position: relative;
+  }
+  .static {
+    position: static;
   }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
@@ -822,13 +824,6 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .group-hover\:text-yellow-300 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-yellow-300);
-      }
-    }
-  }
   .hover\:bg-gray-200 {
     &:hover {
       @media (hover: hover) {
@@ -847,13 +842,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-indigo-600);
-      }
-    }
-  }
-  .hover\:bg-pink-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-pink-500);
       }
     }
   }
