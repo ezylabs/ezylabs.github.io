@@ -1,0 +1,34 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+#sidebar {
+  background: linear-gradient(112.84deg, #46BAEB 0.33%, #AF2CFF 38.23%, #F790AF 65.22%, #C1ABFF 100%);
+
+}
+
+#sidebar img {
+  padding: 10px;
+}
+
+a.site-title.d-block {
+  color: #000 !important;
+}
+
+#avatar {
+  box-shadow: #000 0 0 0 2px !important;
+}
+
+.site-subtitle {
+  color: #000 !important;
+}
+
+a.nav-link {
+  color: #000 !important;
+}
