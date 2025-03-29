@@ -5,7 +5,7 @@ date: 2025-03-29 14:10:00 +0800
 categories: [Fullstack, Interview]
 tags: [interview, tips]
 render_with_liquid: false
-image: "/assets/img/blog-2.png"
+image: "/assets/img/full stack image.jpg"
 ---
 
 # **Master Full-Stack Development with Ezy Interviews – Code Like a Pro!**
