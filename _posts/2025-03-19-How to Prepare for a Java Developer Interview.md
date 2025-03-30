@@ -168,26 +168,26 @@ Cracking a Java Developer interview requires a structured approach and consisten
 * Prepare for system design interviews if applying for senior roles.  
 * Brush up on behavioral questions to make a strong impression.
 
-Follow these steps, stay consistent, and you’ll be well on your way to landing your dream Java Developer job\!
+Follow these steps, stay consistent, and you’ll be well on your way to landing your dream Java Developer job!
 
-**Happy coding\!** 🚀
+**Happy coding!** 🚀
 
 ## **Frequently Asked Questions (FAQs)**
 
-### **1\. How long does it take to prepare for a Java Developer interview?**
+### **1. How long does it take to prepare for a Java Developer interview?**
 
 Preparation time varies based on experience. Freshers may need 2-3 months, while experienced developers might require 4-6 weeks of focused revision and practice.
 
 
-### **2\. What are the best resources for Java interview preparation?**
+### **2. What are the best resources for Java interview preparation?**
 
 Recommended resources include LeetCode, GeeksforGeeks, CodeChef, JavaBrains, Effective Java by Joshua Bloch, and Spring in Action.
 
-### **3\. How important is system design for Java interviews?**
+### **3. How important is system design for Java interviews?**
 
 System design is crucial for mid-to-senior-level roles. Understanding architectural patterns, scalability, and micro services can significantly improve your chances.
 
-### **4\. Do companies prefer Java certifications like OCA/OCP?**
+### **4. Do companies prefer Java certifications like OCA/OCP?**
 
 Certifications are helpful but not mandatory. Practical experience, projects, and strong problem-solving skills carry more weight in interviews.
 

@@ -12,7 +12,7 @@ Have you ever prepared for a Java technical interview with confidence and then g
 
 In this fast-moving technology era, Java continues to be one of the most desired programming languages. If you are a student, a fresher, or an experienced technical person, cracking a Java technical interview can land you a high-paying job opportunity. But, committing common errors may cost you your dream job.
 
-This article will walk you through common mistakes to avoid in a Java technical interview and equip you with strategies to improve your chances of success. Let’s dive in\!
+This article will walk you through common mistakes to avoid in a Java technical interview and equip you with strategies to improve your chances of success. Let’s dive in!
 
 ## Understanding Java Technical Interviews
 
@@ -43,7 +43,7 @@ Now, let’s explore common mistakes to avoid in a Java technical interview and 
 
 ## Common Mistakes to Avoid in a Java Technical Interview
 
-### 1\. Not Practicing Coding Problems Regularly
+### 1. Not Practicing Coding Problems Regularly
 
 Many candidates believe that simply knowing Java concepts is enough. However, failing to practice coding problems can lead to poor problem-solving speed and inefficient solutions.
 
@@ -59,7 +59,7 @@ A candidate who understands recursion but never practices coding problems might 
 * Time yourself while solving problems to improve speed and efficiency.  
 * Participate in coding contests to get exposure to real-world competitive programming.
 
-### 2\. Ignoring Core Java Fundamentals
+### 2. Ignoring Core Java Fundamentals
 
 Interviewers often test your understanding of Java’s core concepts such as OOPs, multithreading, and collections. Ignoring these can make you appear unprepared.
 
@@ -74,7 +74,7 @@ Interviewers often test your understanding of Java’s core concepts such as OOP
 * Revise Java basics before the interview.  
 * Implement small projects using OOPs concepts.
 
-### 3\. Writing Inefficient Code
+### 3. Writing Inefficient Code
 
 Efficiency matters in coding interviews. Writing code that works but performs poorly can reduce your chances of selection.
 
@@ -87,7 +87,7 @@ If a problem can be solved using O(n) complexity, but you write an O(n²) soluti
 * Learn time and space complexity analysis.  
 * Optimize solutions using efficient algorithms and data structures.
 
-### 4\. Failing to Test Code Before Submission
+### 4. Failing to Test Code Before Submission
 
 Submitting code without testing can lead to errors that could have been easily caught.
 
@@ -101,7 +101,7 @@ Submitting code without testing can lead to errors that could have been easily c
 * Test with edge cases before submitting.  
 * Debug systematically if the code doesn’t work.
 
-### 5\. Poor Communication During Coding Rounds
+### 5. Poor Communication During Coding Rounds
 
 Even if you write correct code, failing to communicate your approach can make it difficult for the interviewer to assess your thought process.
 
@@ -110,7 +110,7 @@ Even if you write correct code, failing to communicate your approach can make it
 * Explain your approach before writing code.  
 * Walk through your code logically with the interviewer.
 
-### 6\. Not Being Prepared for Behavioral Questions
+### 6. Not Being Prepared for Behavioral Questions
 
 Many candidates focus only on coding but forget that behavioral questions are equally important.
 
@@ -119,7 +119,7 @@ Many candidates focus only on coding but forget that behavioral questions are eq
 * Prepare answers for common HR questions like “Why do you want to join this company?”  
 * Use the STAR (Situation, Task, Action, Result) method.
 
-### 7\. Lack of Hands-on Experience with Java Projects
+### 7. Lack of Hands-on Experience with Java Projects
 
 Companies prefer candidates who have worked on real-world Java projects.
 
@@ -136,19 +136,19 @@ Mock interviews and hands-on projects help build confidence and improve technica
 
 ## FAQs
 
-### **1\. What are the most common mistakes to avoid in a Java technical interview?**
+### **1. What are the most common mistakes to avoid in a Java technical interview?**
 
 Avoiding coding practice, ignoring Java fundamentals, writing inefficient code, and poor communication are key mistakes.
 
-### **2\. How can I improve my Java coding skills for interviews?**
+### **2. How can I improve my Java coding skills for interviews?**
 
 Regularly practice problems on LeetCode and GeeksforGeeks, work on Java projects, and review core concepts.
 
-### **3\. What Java topics are frequently asked in interviews?** 
+### **3. What Java topics are frequently asked in interviews?** 
 
 OOPs, collections, multithreading, exception handling, and data structures are commonly tested.
 
-### **4\. Is system design important for Java interviews?**
+### **4. Is system design important for Java interviews?**
 
 For senior roles, system design is crucial. Practice designing scalable applications using Java frameworks.
 
