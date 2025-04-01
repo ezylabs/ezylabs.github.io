@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" rel="stylesheet" />
   <link href="./output.css" rel="stylesheet" />
-  <!-- Favicon-->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/img/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="EzyInterviews" />
-  <link rel="manifest" href="assets/img/favicons/site.webmanifest" />
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DFTXEVZPW"></script>
@@ -22,40 +21,116 @@
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date());
-
-    gtag('config', 'G-5DFTXEVZPW');
+    gtag("js", new Date());
+    gtag("config", "G-5DFTXEVZPW");
   </script>
 </head>
 
 <body>
   <!-- Navigation -->
-  <div id="home" class="min-h-screen my-hero-bg">
-    <header class="text-white body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a href="/">
-          <img src="assets/img/logo-name-white.png" alt="logo" class="my-logo" />
-        </a>
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-gray-900" href="#why">Why</a>
-          <a class="mr-5 hover:text-gray-900" href="#features">Features</a>
-          <a class="mr-5 hover:text-gray-900" href="#courses">Courses
-            <span class="inline-block bg-green-600 text-white text-xs font-extralight rounded-full px-1">
-              New
-            </span></a>
-          <a class="mr-5 hover:text-gray-900" href="#workshops">Workshops</a>
-          <a class="mr-5 hover:text-gray-900" href="/blogs/">Blogs</a>
-        </nav>
+  <div id="home1" class="my-hero-bg">
+    <!-- Navbar -->
+    <nav id="navbar"
+      class="fixed top-0 left-0 w-full z-50 h-[70px] bg-transparent transition-all duration-300 ease-in-out px-5 py-5 flex items-center justify-between">
+      <!-- Left Logo -->
+      <a href="/" class="flex-shrink-0">
+        <img src="assets/img/logo-name-white.png" alt="logo" class="h-11" />
+      </a>
 
-        <a href="https://wa.me/918919393342?text=Hello%20EzyInterviews!" target="_blank"
-          rel="noopener noreferrer"
-          class="flex items-center px-4 py-2 text-white fw-500 bg-green-500 rounded shadow-lg hover:bg-green-600">
-          <i class="fa-brands fa-whatsapp px-2 fa-2x"></i></span>
-          <span class="font-medium">WhatsApp Now</span>
-        </a>
+      <!-- Center Menu -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex lg:space-x-6">
+        <ul class="flex items-center space-x-6">
+          <li>
+            <a class="text-white hover:text-gray-900" href="#why">Why</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-gray-900" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-gray-900" href="#courses">
+              Courses
+              <span class="inline-block bg-green-600 text-white text-xs font-extralight rounded-full px-1">New</span>
+            </a>
+          </li>
+          <li>
+            <a class="text-white hover:text-gray-900" href="#workshops">Workshops</a>
+          </li>
+          <li>
+            <a class="text-white hover:text-gray-900" href="/blogs/">Blogs</a>
+          </li>
+        </ul>
       </div>
-    </header>
 
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-white p-3">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right WhatsApp Button -->
+      <a class="hidden lg:inline-flex items-center justify-center py-2 px-4 bg-green-500 hover:bg-green-800 text-white font-medium rounded"
+        href="https://wa.me/918919393342?text=Hello%20EzyInterviews!" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+        <span class="ml-2">WhatsApp Now</span>
+      </a>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="/">
+            <img src="assets/img/logo-black.png" class="h-12" />
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#why">Why</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#features">Features</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#courses">Courses</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#workshops">Workshops</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="/blogs/">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a class="px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-500 hover:bg-green-800 rounded items-center justify-center inline-flex w-full"
+              href="https://wa.me/918919393342?text=Hello%20EzyInterviews!" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp fa-2x"></i>
+              <span class="ml-2">WhatsApp Now</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="home" class="min-h-screen pt-[70px] my-hero-bg">
     <!-- Hero -->
     <section class="text-white body-font">
       <div class="container mx-auto flex px-5 items-center justify-center flex-col h-[calc(100vh-5rem)]">
@@ -72,16 +147,21 @@
             sessions led by industry experts. Gain confidence, improve skills,
             and land your dream job.
           </p>
-          <div class="flex justify-center">
+          <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+            <!-- First Button -->
             <a href="https://wa.me/918919393342?text=Hello EzyInterviews, I would like to attend a free live class!"
               target="_blank" rel="noopener noreferrer"
-              class="inline-flex text-white border-0 py-3 px-6 hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase bg-black">
-              <span>Book a free live class<i class="fas fa-circle-arrow-right px-2"></i></span>
+              class="inline-flex justify-center items-center w-full md:w-auto flex-1 text-white border-0 py-3 px-6 hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase bg-black">
+              <span>Book a free live class
+                <i class="fas fa-circle-arrow-right px-2"></i></span>
             </a>
-            <a href="https://wa.me/918919393342?text=Hello EzyInterviews, I would like to schedule a mock interview!"
+
+            <!-- Second Button -->
+            <a href="https://wa.me/918919393342?text=Hello EzyInterviews, I would like to attend a free live class!"
               target="_blank" rel="noopener noreferrer"
-              class="inline-flex text-black border-0 py-3 px-6 focus:outline-none hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase ml-4 bg-[rgba(255,255,255,0.3)]">
-              <span>Schedule a Mock Inteview<i class="fa fa-calendar-days px-2"></i></span>
+              class="inline-flex justify-center items-center w-full md:w-auto flex-1 text-black border-0 py-3 px-6 focus:outline-none hover:outline outline-white rounded text-sm tracking-[1px] fw-200 uppercase bg-[rgba(255,255,255,0.3)]">
+              <span>Schedule a Mock Interview
+                <i class="fa fa-calendar-days px-2"></i></span>
             </a>
           </div>
         </div>
@@ -181,8 +261,8 @@
           Tailored for different skill levels
         </h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-          Our offerings cater to all skill levels, from beginners to experts. We provide resources and guidance tailored
-          to your needs.
+          Our offerings cater to all skill levels, from beginners to experts.
+          We provide resources and guidance tailored to your needs.
         </p>
         <div class="flex mt-6 justify-center">
           <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
@@ -253,7 +333,11 @@
           Our Product Highlights
         </h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Cracking coding interviews isn’t just about knowing the answers, it’s about thinking like a problem solver. <br/>We help you master problem-solving, system design, and behavioral interviews with expert-led mock sessions. 🚀
+          Cracking coding interviews isn’t just about knowing the answers,
+          it’s about thinking like a problem solver.
+          <br />
+          We help you master problem-solving, system design, and behavioral
+          interviews with expert-led mock sessions. 🚀
         </p>
         <div class="flex mt-6 justify-center">
           <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
@@ -388,7 +472,8 @@
           Why choose Ezy Interviews
         </h1>
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-          “I think everybody in this country should learn how to program a computer because it teaches you how to think.” - Steve Jobs
+          “I think everybody in this country should learn how to program a
+          computer because it teaches you how to think.” - Steve Jobs
         </p>
         <div class="flex mt-6 justify-center">
           <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
@@ -486,7 +571,10 @@
               Personalized Interview Experience
             </h2>
             <p class="leading-relaxed text-base">
-              Our mock interviews are tailored to individual career goals, offering customized question sets and coaching strategies. Candidates receive targeted guidance to refine their technical, problem-solving, and communication skills, ensuring confidence in real job interviews.
+              Our mock interviews are tailored to individual career goals,
+              offering customized question sets and coaching strategies.
+              Candidates receive targeted guidance to refine their technical,
+              problem-solving, and communication skills.
             </p>
           </div>
         </div>
@@ -513,10 +601,14 @@
             Full Stack Java Development
           </h2>
           <p class="leading-relaxed mb-8">
-            Master both front-end and back-end development with our Full Stack Java Development course! Learn Java, Spring Boot, SQL, HTML, CSS, JavaScript, and Angular to build complete web applications. Gain hands-on experience with real-world projects and become a job-ready developer! 🚀
+            Master both front-end and back-end development with our Full Stack
+            Java Development course! Learn Java, Spring Boot, SQL, HTML, CSS,
+            JavaScript, and Angular to build complete web applications. Gain
+            hands-on experience with real-world projects and become a
+            job-ready developer! 🚀
           </p>
           <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-            <a class="text-blue-500 inline-flex items-center" href="/course-full-stack.html">Learn More
+            <a class="text-blue-500 inline-flex items-center" href="/posts/course-full-stack.html">Learn More
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
@@ -532,10 +624,16 @@
             Front End Web Development
           </h2>
           <p class="leading-relaxed mb-8">
-            Master the art of building visually stunning and user-friendly websites! Our Front-End Web Development course covers HTML, CSS, JavaScript, and modern frameworks to create responsive, interactive, and high-performing web applications. Whether you're a beginner or looking to enhance your skills, this course equips you with everything needed to design and develop seamless digital experiences. 🚀
+            Master the art of building visually stunning and user-friendly
+            websites! Our Front-End Web Development course covers HTML, CSS,
+            JavaScript, and modern frameworks to create responsive,
+            interactive, and high-performing web applications. Whether you're
+            a beginner or looking to enhance your skills, this course equips
+            you with everything needed to design and develop seamless digital
+            experiences. 🚀
           </p>
           <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-            <a class="text-blue-500 inline-flex items-center" href="course-frontend.html">Learn More
+            <a class="text-blue-500 inline-flex items-center" href="/posts/course-frontend.html">Learn More
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
@@ -553,10 +651,14 @@
             Backend Java Development
           </h2>
           <p class="leading-relaxed mb-8">
-            Build powerful and scalable applications with our Backend Java Development course! Learn Java, Spring Boot, APIs, and server-side logic to create efficient and secure back-end systems. Perfect for those who want to master backend development and handle real-world projects. 🚀
+            Build powerful and scalable applications with our Backend Java
+            Development course! Learn Java, Spring Boot, APIs, and server-side
+            logic to create efficient and secure back-end systems. Perfect for
+            those who want to master backend development and handle real-world
+            projects. 🚀
           </p>
           <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-            <a class="text-blue-500 inline-flex items-center" href="course-backend.html">Learn More
+            <a class="text-blue-500 inline-flex items-center" href="/posts/course-backend.html">Learn More
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
@@ -572,10 +674,13 @@
             Database Essentials for any Developer
           </h2>
           <p class="leading-relaxed mb-8">
-            Unlock the power of data with our Database Essentials course! Learn SQL, database design, queries, and optimization techniques to manage and retrieve data efficiently. A must-have skill for every developer working with applications. 🔥
+            Unlock the power of data with our Database Essentials course!
+            Learn SQL, database design, queries, and optimization techniques
+            to manage and retrieve data efficiently. A must-have skill for
+            every developer working with applications. 🔥
           </p>
           <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-            <a class="text-blue-500 inline-flex items-center" href="/course-database.html">Learn More
+            <a class="text-blue-500 inline-flex items-center" href="/posts/course-database.html">Learn More
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
@@ -621,7 +726,7 @@
                 projects and technical interviews.
               </p>
               <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                <a class="text-blue-500 inline-flex items-center" href="#">Register
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -646,14 +751,14 @@
                 Interview Etiquette Workshops
               </h1>
               <p class="leading-relaxed mb-5">
-                Learn essential interview etiquette, including body
-                language, professional communication, and first impressions.
-                These sessions prepare students to present themselves
-                confidently, make a positive impact, and handle interviews
-                with professionalism.
+                Learn essential interview etiquette, including body language,
+                professional communication, and first impressions. These
+                sessions prepare students to present themselves confidently,
+                make a positive impact, and handle interviews with
+                professionalism.
               </p>
               <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                <a class="text-blue-500 inline-flex items-center" href="#">Register
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -680,12 +785,11 @@
               <p class="leading-relaxed mb-5">
                 Gain strategies to tackle interview questions effectively,
                 from technical assessments to behavioral rounds. Students
-                learn to structure responses, think critically under
-                pressure, and showcase problem-solving skills to impress
-                recruiters.
+                learn to structure responses, think critically under pressure,
+                and showcase problem-solving skills to impress recruiters.
               </p>
               <div class="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full">
-                <a class="text-blue-500 inline-flex items-center" href="/workshops.html">Register
+                <a class="text-blue-500 inline-flex items-center" href="#">Register
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -708,10 +812,8 @@
           Contact Us
         </a>
       </div>
-
     </div>
   </section>
-
 
   <!-- Blogs -->
   <section class="text-gray-600 body-font" id="blogs">
@@ -727,21 +829,23 @@
       <div class="flex flex-wrap -m-4">
         <div class="p-4 md:w-1/3">
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img class="lg:h-60 md:h-36 w-full object-cover object-center"
-              src="assets/img/zero-hero.png"
-              alt="blog" />
+            <img class="lg:h-60 md:h-36 w-full object-cover object-center" src="assets/img/zero-hero.png" alt="blog" />
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                 Full Stack Development
               </h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                From Zero to Hero: How to Become a Full-Stack Developer in 2025
+                From Zero to Hero: How to Become a Full-Stack Developer in
+                2025
               </h1>
               <p class="leading-relaxed mb-3">
-                With the increasing demand for web applications, Full-Stack Development has become one of the most sought-after skills in the tech industry. A Full...
+                With the increasing demand for web applications, Full-Stack
+                Development has become one of the most sought-after skills in
+                the tech industry. A Full...
               </p>
               <div class="flex items-center flex-wrap">
-                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/posts/From-Zero-to-Hero_-How-to-Become-a-Full-Stack-Developer-in-2024">Learn More
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="/posts/From-Zero-to-Hero_-How-to-Become-a-Full-Stack-Developer-in-2024">Learn More
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -761,13 +865,17 @@
                 Full Stack Development
               </h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                Common Mistakes in Full-Stack Development and How to Avoid Them
+                Common Mistakes in Full-Stack Development and How to Avoid
+                Them
               </h1>
               <p class="leading-relaxed mb-3">
-                Full-stack development is an exciting field that requires a solid understanding of both front-end and back-end technologies. However, many develope...
+                Full-stack development is an exciting field that requires a
+                solid understanding of both front-end and back-end
+                technologies. However, many develope...
               </p>
               <div class="flex items-center flex-wrap">
-                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/posts/Common-Mistakes-in-Full-Stack-Development-and-How-to-Avoid-Them">Learn More
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="/posts/Common-Mistakes-in-Full-Stack-Development-and-How-to-Avoid-Them">Learn More
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -780,8 +888,7 @@
         </div>
         <div class="p-4 md:w-1/3">
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img class="lg:h-60 md:h-36 w-full object-cover object-center" src="/assets/img/sql-pro.jpg"
-              alt="blog" />
+            <img class="lg:h-60 md:h-36 w-full object-cover object-center" src="/assets/img/sql-pro.jpg" alt="blog" />
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                 Database
@@ -790,10 +897,13 @@
                 SQL for Developers: Learn to Manage Databases Like a Pro
               </h1>
               <p class="leading-relaxed mb-3">
-                SQL is the backbone of database management. Whether you’re building applications, analyzing data, or optimizing perform...
+                SQL is the backbone of database management. Whether you’re
+                building applications, analyzing data, or optimizing
+                perform...
               </p>
               <div class="flex items-center flex-wrap">
-                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="/posts/SQL-for-Developers_-Learn-to-Manage-Databases-Like-a-Pro">Learn More
+                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  href="/posts/SQL-for-Developers_-Learn-to-Manage-Databases-Like-a-Pro">Learn More
                   <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -807,7 +917,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="text-gray-600 body-font">
@@ -825,7 +934,8 @@
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500 hover:text-pink-500" href="https://www.instagram.com/ezyinterviews/" target="_blank" rel="noopener noreferrer">
+        <a class="ml-3 text-gray-500 hover:text-pink-500" href="https://www.instagram.com/ezyinterviews/"
+          target="_blank" rel="noopener noreferrer">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
