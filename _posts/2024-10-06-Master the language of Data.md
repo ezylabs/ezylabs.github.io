@@ -66,7 +66,7 @@ You’ll design and query real-world datasets to build muscle memory and problem
 
 ### 🧑‍🏫 Mode:
 
-* Live interactive sessions + support material
+* Interactive Live sessions + support material
 
 ---
 

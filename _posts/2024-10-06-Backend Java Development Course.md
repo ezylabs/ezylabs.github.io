@@ -65,7 +65,7 @@ Each project is designed to mimic real-world requirements and will help build yo
 
 ### 🧑‍🏫 Mode:
 
-Live Online Classes with 1-on-1 Doubt Support
+Interactive Live Online Classes with 1-on-1 Doubt Support
 
 ---
 

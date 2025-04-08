@@ -65,7 +65,7 @@ Each project is designed to help you build a real-world portfolio and boost your
 
 ### 🧑‍🏫 Mode:
 
-* Live Online Classes with Personalized Mentorship
+* Interactive Live Online Classes with Personalized Mentorship
 
 ---
 

@@ -64,7 +64,7 @@ Each project is designed to give you hands-on experience, including frontend + b
 
 ### 🧑‍🏫 Mode:
 
-* Live Online Classes with Doubt-Solving Sessions
+* Interactive Live Online Classes with Doubt-Solving Sessions
 
 ---
 
