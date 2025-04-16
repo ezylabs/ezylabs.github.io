@@ -1,12 +1,11 @@
 #  The contact options.
 - type: instagram
-  icon: 'fab fa-instagram'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.instagram.com/ezyinterviews/'
+  icon: "fab fa-instagram" # icons powered by <https://fontawesome.com/>
+  url: "https://www.instagram.com/ezyinterviews/"
 
 - type: whatsapp
-  icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
-  url:  'https://wa.me/918919393342?text=Hello%20EzyInterviews!'
-
+  icon: "fab fa-whatsapp" # icons powered by <https://fontawesome.com/>
+  url: "https://wa.me/918520902117?text=Hello%20EzyInterviews!"
 # Uncomment and complete the url below to enable more contact options
 # - type: linkedin
 #   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
